@@ -1,3 +1,6 @@
+
+task 3 
+```sql
 DECLARE @count  INT, @Year INT, @StepDate DATE
 SET @count = 0;
 SET @Year = YEAR(GETDATE())
@@ -13,3 +16,4 @@ BEGIN
     SET @StepDate = DATEADD(DAY, 1, @StepDate)
     SET @count = @count + 1
 END
+```
