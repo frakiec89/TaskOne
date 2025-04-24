@@ -3,11 +3,6 @@
 TaskOneVarOne();
 
 
-
-
-
-
-
 static void TaskOneVarOne()
 {
     TaskOneArray taskOneArray = new TaskOneArray();
