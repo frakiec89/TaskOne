@@ -158,7 +158,7 @@ void GetInvoice(MsSqlContext context)
     foreach (var item in context.Invoices.Include(x=>x.From))
     {
         x++;
-        Console.WriteLine($"{x}. №{item.Id}\nот: {item.From.Name}кому:{item.To.Name}, дата: {item.DateTime.ToString("d")} ");
+        Console.WriteLine($"{x}. №{item.Id}\nот: {item.From.Name} - кому:{item.To.Name}, дата: {item.DateTime.ToString("d")} ");
 
         int y = 0;
         foreach (var p in context.InvoiceProducts.Where(x => x.Invoice == item)
